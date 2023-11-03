@@ -1,0 +1,77 @@
+.component {
+  margin-left: 50px;
+  margin-top: 97px;
+}
+
+.principal {
+  color: #08111E;
+
+  font-family: Plus Jakarta Sans;
+
+  margin: none;
+  padding: none;
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  width: 505px;
+  height: 135px;
+}
+
+.secundario {
+  color: #08111E;
+  font-family: Plus Jakarta Sans;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  margin-top: 31px;
+  margin-bottom: 46px;
+}
+
+.botaoverde {
+  display: block;
+  width: 150px;
+  height: 52px;
+  flex-shrink: 0;
+  border: none;
+
+  border-radius: 40px;
+  background: #0AB2B7;
+
+  color: #FFF;
+
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.img1 {
+  position: absolute;
+  top: 161px;
+  right: 350px;
+}
+
+.img2 {
+  position: absolute;
+  top: 259px;
+  right: 49px;
+}
+
+.img3 {
+  position: absolute;
+  top: 449px;
+  right: 350px;
+}
+
+.img4 {
+  position: absolute;
+  top: 595px;
+  right: 650px;
+}
