@@ -26,4 +26,10 @@ class ClientesController extends Controller
             }
         }
     }
+
+    public function index(Request $request) {
+        $clientes = Clientes::all();
+        return response()->json($clientes);
+    }
+
 }

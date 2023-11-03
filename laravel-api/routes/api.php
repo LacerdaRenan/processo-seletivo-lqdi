@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('/cadastrar-email-cliente', [ClienteController::class, 'inserirCliente']);
+Route::get('/cliente', [ClienteController::class, 'index']);
