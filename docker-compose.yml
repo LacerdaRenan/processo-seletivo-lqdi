@@ -1,0 +1,50 @@
+version: '3.3'
+
+services:
+    laravel-docker:
+        build: ./laravel-api
+        ports:
+            - 8000:80
+        volumes:
+            - ./laravel-api/:/usr/share/nginx/html
+        restart: always
+        networks:
+            - docker
+        depends_on:
+            - db
+
+    db:
+        image: mysql
+        command: --default-authentication-plugin=mysql_native_password
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: example
+            MYSQL_DATABASE: dbtest
+            MYSQL_USER: user
+            MYSQL_PASSWORD: user
+        # volumes:
+            # - ./api/docker/dbdata:/var/lib/mysql
+        networks:
+            - docker
+
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+        - 8080:8080
+        networks:
+            - docker
+
+networks:
+    docker:
+        driver: bridge
+
+
+# comando para rodar as migrations
+# docker-compose exec laravel-docker php artisan migrate
+
+# comando para criar as migrations
+# php artisan make:model <nome do modelo> --migration
+
+# comando para criar as controllers
+# php artisan make:controller <nome> --api
