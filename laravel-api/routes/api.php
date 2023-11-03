@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ClientesController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/cadastrar-email-cliente', [ClienteController::class, 'inserirCliente']);
 Route::get('/cliente', [ClienteController::class, 'index']);
+Route::post('/mail-to/{id}', [ClienteController::class, 'sendEmail']);

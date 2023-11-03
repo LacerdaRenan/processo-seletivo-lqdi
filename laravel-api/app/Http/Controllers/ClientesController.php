@@ -32,4 +32,27 @@ class ClientesController extends Controller
         return response()->json($clientes);
     }
 
+    public function sendEmail($id) {
+
+        $cliente = Clientes::find($id);
+
+        if (!$cliente) {
+            return response()->json(['error'=>'not found'], 404);
+        }
+
+        $email = $cliente->email;
+        $nome = $cliente->nome;
+
+        Mail::send([], [], function ($message) use ($email, $nome) {
+            $message->to($email);
+            $message->subject("Teste de email");
+
+            $message->setBody("Hello, $nome", 'text/html');
+
+            $message->addPart("Hello, $nome", 'text/plain');
+        });
+
+        return response()->json(['message' => 'E-mail enviado com sucesso.']);
+    }
+
 }
