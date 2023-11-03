@@ -14,6 +14,6 @@ use App\Http\Controllers\ClientesController;
 |
 */
 
-Route::post('/cadastrar-email-cliente', [ClienteController::class, 'inserirCliente']);
-Route::get('/cliente', [ClienteController::class, 'index']);
-Route::post('/mail-to/{id}', [ClienteController::class, 'sendEmail']);
+Route::post('/cadastrar-email-cliente', [ClientesController::class, 'inserirCliente']);
+Route::get('/cliente', [ClientesController::class, 'index']);
+Route::post('/mail-to/{id}', [ClientesController::class, 'sendEmail']);
