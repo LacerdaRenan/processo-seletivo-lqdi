@@ -35,6 +35,18 @@ services:
         networks:
             - docker
 
+    # react-app:
+    #     build: ./app
+    #     ports:
+    #         - 3001:3001
+    #     networks:
+    #         - docker
+    #     depends_on:
+    #         - db
+    #     restart: always
+    #     volumes:
+    #         - ./app/:/app
+
 networks:
     docker:
         driver: bridge
