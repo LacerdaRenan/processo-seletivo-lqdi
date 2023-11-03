@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: center;
+
+  width: 1280px;
+  height: 321px;
+  flex-shrink: 0;
+
+  background: #000;
+
+  margin-top: 86px;
+}
+
+.footerText1 {
+  width: 227px;
+  color: #FFF;
+  font-family: Satoshi;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+

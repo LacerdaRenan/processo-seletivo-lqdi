@@ -1,0 +1,25 @@
+.vivaUmaNovaExperiencia {
+  margin-top: 112px;
+  display: flex;
+  justify-content: center;
+  gap: 85px;
+}
+
+.vivaUmaNovaExperienciaTexto {
+  width: 415px;
+  color: #080808;
+  font-family: Plus Jakarta Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.vivaUmaNovaExperienciaTexto2 {
+  color: #08111E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 21px;
+}

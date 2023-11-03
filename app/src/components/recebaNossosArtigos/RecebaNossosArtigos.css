@@ -1,0 +1,78 @@
+.formsRecebaNossosArtigos {
+  width: 480px;
+  height: 644px;
+  flex-shrink: 0;
+  border-radius: 19px;
+  background: #090909;
+}
+
+.textoRecebaNossosArtigos {
+  width: 297px;
+  color: #FFF;
+
+  font-family: Plus Jakarta Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  margin-top: 58px;
+  margin-left: 40px;
+}
+
+.emailRecebaNossosArtigos {
+  width: 393px;
+  height: 78px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  border: 2px solid #FFF;
+  background-color: #090909;
+
+  margin-top: 78px;
+  margin-left: 40px;  
+}
+
+.emailRecebaNossosArtigos::placeholder {
+  color: #FFF;
+
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.rodapeRecebaNossosArtigos {
+  width: 117px;
+  color: #FFF;
+
+  margin-top: 71px;
+  margin-left: 40px;
+  font-family: Plus Jakarta Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.iconsRecebaNossosArtigos {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 13px;
+
+  margin-top: 24px;
+  margin-left: 40px;
+}
+
+.circuloRecebaNossosArtigos {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background-color: #FFF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
