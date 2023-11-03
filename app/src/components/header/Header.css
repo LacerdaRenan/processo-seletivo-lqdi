@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 49px;
+}
+
+.logo {
+  width: 78px;
+  height: 46px;
+}
+
+.texto {
+  margin-left: 748px;
+  margin-right: 21px;
+
+  min-width: 215px;
+  color: rgba(0, 0, 0, 0.70);
+
+  font-family: Plus Jakarta Sans;
+
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  text-decoration: none;
+  }
+
+.botaopreto {
+  width: 119px;
+  height: 42px;
+  border-radius: 40px;
+  background: #000;
+  color: white;
+  border: none;
+
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
